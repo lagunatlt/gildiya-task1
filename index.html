@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Задание1</title>
+</head>
+<body>
+
+	<script>
+		const colorName = ['yellow', 'green', 'blue', 'white', 'black', 'gray', 'red', 'brown', 'pink']
+
+		function colorItem(number, word) {
+			let numbNumber = number.toString()
+			let numbWord = word.length.toString()
+			numbWord = +numbWord[0]
+			numbNumber = +numbNumber[0]
+			for (let i = 0; i < colorName.length; i++) {
+				if ((numbNumber <= numbWord) && (numbWord == i + 1)){
+					console.log(colorName[i]);
+				} else if ((numbNumber >= numbWord) && (numbNumber == i + 1)) {
+					console.log(colorName[i]);
+				}
+			}
+		};
+		colorItem(8, 'president')
+		// если первая цифра числа >= первой цифры длины слова, то цвет = первой цифре числа
+		// если первая цифра слова >= первой цифры числа, то цвет = первой цифре слова
+
+	</script>
+</body>
+</html>
