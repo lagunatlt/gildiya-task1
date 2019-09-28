@@ -17,14 +17,17 @@
 			numbWord = +numbWord[0]
 			numbNumber = +numbNumber[0]
 			for (let i = 0; i < colorName.length; i++) {
-				if ((numbNumber <= numbWord) && (numbWord == i + 1)){
-					console.log(colorName[i]);
-				} else if ((numbNumber >= numbWord) && (numbNumber == i + 1)) {
-					console.log(colorName[i]);
+				switch (true) {
+					case ((numbNumber <= numbWord) && (numbWord == i + 1)):
+						console.log(colorName[i]);
+						break;
+					case ((numbNumber >= numbWord) && (numbNumber == i + 1)):
+						console.log(colorName[i]);
+						break;
 				}
 			}
 		};
-		colorItem(8, 'president')
+		colorItem(6, 'prde1111')
 		// если первая цифра числа >= первой цифры длины слова, то цвет = первой цифре числа
 		// если первая цифра слова >= первой цифры числа, то цвет = первой цифре слова
 
